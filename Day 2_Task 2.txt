@@ -1,0 +1,29 @@
+1. List all department IDs with number of employees in that department, all the department should be listed even if they have zero employee. 
+
+Query - select dept_no, count(emp_no) from dept_emp
+	group by dept_no;
+
+
+Output
+dept_no	count(emp_no)
+d001	20211
+d002	17346
+d003	17786
+d004	73485
+d005	85707
+d006	20117
+d007	52245
+d008	21126
+d009	23580
+
+
+2. Find % difference between max and min salary of employees in year of 90-91 hired on same date.
+
+Query- 
+select ((max(salary)-min(salary))/((max(salary)+min(salary)/2))*100) from salaries
+
+Output-
+67.3666
+
+3. % increment per employee in the year 1988.
+
